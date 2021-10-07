@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <br>
+    <br>
+    <section id="detail">
+        <div class="list-group-item list-group-item-action active">Détails de la photo :</div><br>
+        <div class="list-group-item list-group-item-action">{{ photo.title }}</div><br>
+        <div class="list-group-item list-group-item-action">{{ photo.year }}</div><br>
+        <div class="list-group-item list-group-item-action">{{ photo.description }}</div>
+    </section>
+    <br>
+    <br>
+{% endblock body %}

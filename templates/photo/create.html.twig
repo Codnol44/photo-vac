@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% block title %} {{ parent() }} {% endblock title %}
+    <br>
+    <br>
+    <div id="form">
+        <div> {{ form_start(photoForm) }} </div>
+        <div> {{ form_widget(photoForm) }} </div>
+        <button>Envoyer !</button>
+        <div> {{ form_end(photoForm) }} </div>
+    </div>
+    <br>
+    <p id = prod>Les photos sont bien ajoutés à la base de données à chaque fois que vous arrivez sur cette page !</p>
+    <br>
+    <br>
+{% endblock body %}

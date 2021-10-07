@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>Here is the famous PhotoList !</h1>
+    <br>
+    <br>
+    <section id="list">
+        {% for photo in photos %}
+            <th scope="row">Photo {{ photo.id }} :</th>
+            <td><a href=" {{ url('photo_detail', {"id": photo.id }) }} ">Détails de la photo
+            <img src = {{ asset('img/' ~ photo.photo) }} ></a></td>
+            <th scope="row"><a href="{{ url('photo_delete',{'id': photo.id } ) }}">Supprimer</a></th><br><br>
+            </tr>
+        {% endfor %}
+    </section>
+
+{%  endblock %}

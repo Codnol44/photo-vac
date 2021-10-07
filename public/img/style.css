@@ -1,0 +1,43 @@
+* {
+    background-color: khaki;
+    font-family: Impact;
+    font-size: medium;
+}
+
+h1 {
+    color : lawngreen;
+    font-size: xxx-large;
+}
+
+#list {
+    margin-left: 300px;
+    color: midnightblue;
+}
+
+img {
+    width: 700px;
+    height: 450px;
+}
+
+#law {
+    color: red;
+    font-family: Ink Free;
+    font-size: xxx-large;
+    animation: law 3s infinite;
+}
+
+@keyframes law {
+    0%{opacity:1;}
+    50%{opacity:0;}
+    100%{opacity:1;}
+}
+
+#form {
+    margin-left: 50px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    max-width: 50%;
+    width: 150px;
+}
+
+
